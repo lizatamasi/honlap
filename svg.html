@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <title> SVG</title>
+    <link rel="stylesheet" href="style.css">
+ </head>   
+
+<body>
+    <header>
+        <p id="asd">
+            <a href="#kep1">Bemutatkozom</a> <span>|</span>
+            <a href="#hobbim">Hobbim</a>  <span>|</span>
+            <a href="#orarend">Órarendem</a>   
+            <a href="svg.html">SVG</a>
+        </p>
+    </header>
+</body>
+
+
+    <h1>Az első SVG</h1>
+
+<svg width="1000" height="700">
+    <circle cx="150" cy="250" r="40" stroke="green" stroke-width="1" fill="yellow" />
+    <circle id="c"
+    cx="50" cy="50" r="40" stroke="green" stroke-width="1" fill="yellow" />
+   
+
+</svg> 
+<div id="kep1">
+    <h1>Bemutatkozom</h1>
+    <h2>Tamási Lizának hívnak. Az SZTE Gyakorló Gimnázium és Általános Iskola biológia-fizika-kémia szakára járok.</h2>
+</div>
+<div id="hobbim">
+    <p>
+        <h1>
+            Hobbim
+        </h1>
+        <h2>
+            Szabadidőmet általában zongorázással töltöm, már 4 éves korom óta járok rendszeresen a zeneiskolába. <br>
+            Ezen kívül rendszeresen járok thai-boxolni. <br>
+            Kevenc darabom: <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xFMPBPOy9SI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </h2>
+    </p>
+</div>
+<div id="orarend">
+    <h1>
+        Órarendem
+    </h1>
+    <table>
+        <tr>
+            <td id="szam"></td>
+            <td><b>Hétfő</b></td>
+            <td><b>Kedd</b></td>
+            <td><b>Szerda</b></td>
+            <td><b>Csütörtök</b></td>
+            <td><b>Péntek</b></td>
+        </tr>
+        <tr>
+            <td id="szam">1.</td>
+            <td></td>
+            <td>Biológia</td>
+            <td>Tesi</td>
+            <td>Viz. kult.</td>
+            <td>Biológia</td>
+        </tr>
+        <tr>
+            <td id="szam">2.</td>
+            <td>Fizika</td>
+            <td>Kémia</td>
+            <td>Fizika</td>
+            <td>Dig. kult.</td>
+            <td>Francia</td>
+        </tr>
+        <tr>
+            <td id="szam">3.</td>
+            <td>Matek</td>
+            <td>Francia</td>
+            <td>Ének</td>
+            <td>Angol</td>
+            <td>Kémia</td>
+        </tr>
+        <tr>
+            <td id="szam">4.</td>
+            <td>Tesi</td>
+            <td>Irodalom</td>
+            <td>Matek</td>
+            <td>Fizika</td>
+            <td>Angol</td>
+        </tr>
+        <tr>
+            <td id="szam">5.</td>
+            <td>Irodalom</td>
+            <td>Töri</td>
+            <td>Irodalom</td>
+            <td>Biosz</td>
+            <td>Matek</td>
+        </tr>
+        <tr>
+            <td id="szam">6.</td>
+            <td>Töri</td>
+            <td>Matek</td>
+            <td>Magyar</td>
+            <td>Francia</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td id="szam">7.</td>
+            <td>Angol</td>
+            <td>Föci</td>
+            <td></td>
+            <td>Osztályfőnöki</td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+
+
+
+
+
+</body>
+
+<style>
+    svg{
+        border-radius: 5px;
+          box-shadow: 1px 1px 3px black;
+          border: solid black 8px;
+    }
+
+</style>
+
+<script>
+     x = 50
+    setInterval (v=> {
+        document.getElementById ("c").setAttribute ("cx",x) 
+        if (x<800) x += 1},10 )
+</script>
+
+</html>
